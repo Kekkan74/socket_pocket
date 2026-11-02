@@ -1,5 +1,5 @@
 # ==========================================================
-# SOC-Bolsillo: DFIR & Forensics Artifacts Exclusion
+# socket_pocket: DFIR & Forensics Artifacts Exclusion
 # ==========================================================
 
 # Do not commit collected evidence dumps or archives

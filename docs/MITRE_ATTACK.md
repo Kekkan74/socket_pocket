@@ -1,12 +1,12 @@
-# Mapeo Táctico MITRE ATT&CK // SOC-Bolsillo
+# Mapeo Táctico MITRE ATT&CK // socket_pocket
 
-El conjunto de artefactos recolectados por **SOC-Bolsillo** (volátiles + target `KapeTriage`) permite a los analistas del SOC y respondedores a incidentes detectar, reconstruir y correlacionar actividades asociadas a las siguientes tácticas y técnicas de **MITRE ATT&CK Enterprise Matrix**:
+El conjunto de artefactos recolectados por **socket_pocket** (volátiles + target `KapeTriage`) permite a los analistas del SOC y respondedores a incidentes detectar, reconstruir y correlacionar actividades asociadas a las siguientes tácticas y técnicas de **MITRE ATT&CK Enterprise Matrix**:
 
 ---
 
 ## Matriz de Cobertura Forense
 
-| Táctica MITRE | ID Técnica | Nombre de Técnica | Artefacto Recolectado en SOC-Bolsillo | Capacidad de Detección / Análisis |
+| Táctica MITRE | ID Técnica | Nombre de Técnica | Artefacto Recolectado en socket_pocket | Capacidad de Detección / Análisis |
 | :--- | :--- | :--- | :--- | :--- |
 | **Initial Access & Execution** | **T1204** | User Execution: Malicious File | `Prefetch (.pf)`, `LNK Files`, `JumpLists` | Reconstruye qué archivo abrió el usuario, ruta exacta, volumen de origen y marcas de tiempo de primera y última ejecución. |
 | **Execution** | **T1059** | Command and Scripting Interpreter | `Security.evtx` (Event ID 4688), `Microsoft-Windows-PowerShell%4Operational.evtx` (Event ID 4104) | Permite auditar comandos de PowerShell ejecutados (Script Block Logging), parámetros CLI sospechosos (`-enc`, `-w hidden`, `-nop`). |

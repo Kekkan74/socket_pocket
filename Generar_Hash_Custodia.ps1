@@ -3,7 +3,7 @@
     Generar_Hash_Custodia.ps1 - Verificación Criptográfica y Cadena de Custodia DFIR
 .DESCRIPTION
     Calcula los hashes SHA-256 y SHA-1 de los archivos comprimidos de evidencias generados
-    por SOC-Bolsillo, generando un registro formal de integridad para cadena de custodia.
+    por socket_pocket, generando un registro formal de integridad para cadena de custodia.
 .AUTHOR
     Adry (Kekkan74)
 #>
@@ -16,7 +16,7 @@ param (
 )
 
 Write-Host "==========================================================" -ForegroundColor Cyan
-Write-Host " [SOC-Bolsillo] Auditoría de Integridad y Cadena Custodia " -ForegroundColor Cyan
+Write-Host " [socket_pocket] Auditoría de Integridad y Cadena Custodia " -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Cyan
 
 if (-not (Test-Path $CarpetaEvidencias)) {

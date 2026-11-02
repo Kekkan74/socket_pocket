@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ SOC-Bolsillo // Live Incident Response & Forensic Triage USB
+# 🛡️ socket_pocket // Live Incident Response & Forensic Triage USB
 
 <p align="center">
   <strong>Suite de Triage Forense y Respuesta a Incidentes (DFIR) 100% Automatizada y Desatendida</strong><br/>
@@ -87,7 +87,7 @@ flowchart LR
 ## 🛠️ Estructura del Repositorio
 
 ```text
-SOC-Bolsillo/
+socket_pocket/
 ├── Extraer_Evidencias.bat      # Script principal de triage automatizado y desatendido
 ├── Preparar_USB.ps1            # Script de aprovisionamiento, descarga de 7za y auditoría USB
 ├── Generar_Hash_Custodia.ps1   # Generador de firmas SHA-256 / SHA-1 para cadena de custodia
@@ -117,8 +117,8 @@ Conecta una unidad USB (recomendado sistema de archivos **NTFS** o **exFAT**):
 
 ```powershell
 # Clonar el repositorio dentro de tu memoria USB (ej. Unidad E:)
-git clone https://github.com/Kekkan74/SOC-Bolsillo.git E:\SOC-Bolsillo
-cd E:\SOC-Bolsillo
+git clone https://github.com/Kekkan74/socket_pocket.git E:\socket_pocket
+cd E:\socket_pocket
 
 # Ejecutar el aprovisionador automático (descarga 7za.exe y valida carpetas)
 powershell -ExecutionPolicy Bypass -File .\Preparar_USB.ps1
@@ -133,10 +133,10 @@ Descarga KAPE desde el [portal oficial de Kroll](https://www.kroll.com/en/servic
 1. Inserta el pendrive en la máquina Windows bajo sospecha.
 2. Abre la consola o ejecuta como Administrador:
    ```cmd
-   E:\SOC-Bolsillo\Extraer_Evidencias.bat
+   E:\socket_pocket\Extraer_Evidencias.bat
    ```
 3. El script recopilará los artefactos y generará el archivo:
-   `E:\SOC-Bolsillo\Evidencias\%COMPUTERNAME%_Evidencia.zip`
+   `E:\socket_pocket\Evidencias\%COMPUTERNAME%_Evidencia.zip`
 
 ### Paso 4: Generar Registro de Cadena de Custodia
 

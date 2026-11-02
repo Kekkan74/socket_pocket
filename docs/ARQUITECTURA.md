@@ -1,4 +1,4 @@
-# Arquitectura Técnica & Pipeline Forense // SOC-Bolsillo
+# Arquitectura Técnica & Pipeline Forense // socket_pocket
 
 ## 1. Orden de Volatilidad (RFC 3227)
 
@@ -22,7 +22,7 @@ flowchart TD
         end
     end
 
-    subgraph USB["Unidad USB Triage (SOC-Bolsillo)"]
+    subgraph USB["Unidad USB Triage (socket_pocket)"]
         subgraph Pipeline["3. Empaquetado Criptográfico"]
             P1["7za.exe CLI Standalone"]
             P2["Cifrado Simétrico AES-256"]

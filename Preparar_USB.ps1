@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Preparar_USB.ps1 - Provisionamiento y Auditoría de Unidad USB para SOC-Bolsillo
+    Preparar_USB.ps1 - Provisionamiento y Auditoría de Unidad USB para socket_pocket
 .DESCRIPTION
     Verifica el entorno, valida el sistema de archivos del pendrive (evitando el límite de 4GB de FAT32),
     crea la estructura de carpetas requerida y descarga automáticamente 7za.exe si no está presente.
@@ -16,7 +16,7 @@ param (
 $ErrorActionPreference = "Stop"
 
 Write-Host "==========================================================" -ForegroundColor Cyan
-Write-Host " [SOC-Bolsillo] Provisionamiento de Entorno USB Triage    " -ForegroundColor Cyan
+Write-Host " [socket_pocket] Provisionamiento de Entorno USB Triage    " -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Cyan
 
 # 1. Comprobacion de privilegios
