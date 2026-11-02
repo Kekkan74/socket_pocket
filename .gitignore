@@ -1,0 +1,31 @@
+# ==========================================================
+# SOC-Bolsillo: DFIR & Forensics Artifacts Exclusion
+# ==========================================================
+
+# Do not commit collected evidence dumps or archives
+Evidencias/*
+!Evidencias/.gitkeep
+*.zip
+*.7z
+*.tar
+*.gz
+*.raw
+*.dd
+*.vmdk
+
+# Do not commit third-party binaries (download via Preparar_USB.ps1)
+Herramientas/*.exe
+Herramientas/*.dll
+KAPE/**
+!KAPE/README.md
+
+# Windows & OS Metadata
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary & Log files
+*.tmp
+*.log
